@@ -111,7 +111,7 @@ static string GetNumberCubed(int aNumber,int bNumber)
 {
     var sb = new StringBuilder();
     for (int i = aNumber; i <= bNumber; i++)
-     sb.Append($"{i} в кубе = {i*i*i}");
+     sb.Append($"{i} в кубе = {i*i*i}\n");
     return sb.ToString();
 }
 
@@ -138,7 +138,7 @@ static string GetTableFunction()
     while (x <= 5)
     {
         y = 5 - x * x / 2;
-        sb.Append($"{x.ToString("0.0")} | {y.ToString("0.00")}");
+        sb.Append($"{x.ToString("0.0")} | {y.ToString("0.00")}\n");
         x = x + 0.5;
     }
     return sb.ToString();
@@ -192,7 +192,7 @@ static string GetSeracuz()
             n = (short)((3 * n + 1) / 2); 
             sb.Append($" |{n}|");
         }    
-        sb.Append("n/");
+        sb.Append("\n");
     }
     return sb.ToString(); 
 }
